@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="stylesheet" href="post.css">
+</head>
+<body>
+       <h2 class="heading">QUORA</h2>
+       <% posts.forEach((post)=>{%>
+              <div class="post">
+                     <h4>Name: <%=post.name%></h4>
+                     <p>Post: <%=post.content%></p>
+                     <strong>Likes: <%=post.likes%></strong>
+                     <strong>Likes: <%=post.comments%></strong>
+                     <button class="newPost"> <a href="http://localhost:5000/posts/<%=post.id %>">View Post</a> </button>
+                     <button class="newPost"> <a href="http://localhost:5000/posts/<%=post.id %>/edit">Edit Post</a> </button>
+                     <button class="newPost"> <a href="http://localhost:5000/posts/<%=post.id %>/delete">Delete</a> </button>
+              </div>
+       <%}) %>
+       <button class="newPost"> <a href="http://localhost:5000/posts/new">New Post</a> </button>
+</body>
+</html>

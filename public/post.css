@@ -1,0 +1,22 @@
+.heading{
+       text-align: center;
+       color: rgb(250, 94, 50);
+       font-size: 50px;
+       margin-top: 0px;
+}
+.post{
+       height: 200px ;
+       width: 400px;
+       background-color: rgba(197, 200, 200, 0.941);
+       color: blue;
+       padding-top:10px ;
+       padding-left: 20px;
+       margin-bottom: 10px;
+}
+.newPost{
+       color: blue;
+       background-color: rgb(199, 219, 21);
+       border-radius: 5px;
+       height: 35px;
+       margin-left: 10px;
+}

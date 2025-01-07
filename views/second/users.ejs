@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Users data</title>
+       <style>
+              table,th,td{
+                     border: 1px solid black;
+              }
+       </style>
+</head>
+<body>
+       <h2 style="text-align: center;">Here we goo...</h2>
+       <form method="get" action="/users/add">
+              <button style="color: blue; width: 85px; height: 40px;">Add new one</button>
+       </form>
+       <div>
+              <table>
+                     <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Id</th>
+                     </tr>
+              <%  data.forEach((p)=>{ %>
+                     <tr>
+                            <td><%= p.userName %></td>
+                            <td><%= p.email %></td>
+                            <td><%= p.id %></td>
+                            <td><button> <a href="http://localhost:8000/users/<%= p.id %>/edit">Edit</a> </button></td>
+                            <td> <form method='get' action="/users/<%= p.id %>/delete?_method=DELETE">
+                                   <button>Delete</button>
+                            </form> </td>
+                     </tr>
+              <%}) %>
+       </table>
+       </div>
+</body>
+</html>
