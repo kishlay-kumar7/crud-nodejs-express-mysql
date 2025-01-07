@@ -15,3 +15,12 @@ This project demonstrates how to build a simple backend API using **Node.js**, *
 - **MySQL CRUD operations**: Implemented using MySQL for structured data storage and SQL queries.
 - **RESTful API**: Provides endpoints to interact with the database through HTTP requests (GET, POST, PUT, DELETE).
 - **Error Handling**: Includes proper error handling for each operation.
+
+## Installation:
+
+To get started with the project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kishlay-kumar7/crud-nodejs-express-mysql.git
+   ```
